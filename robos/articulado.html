@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robô Articulado</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <header class="cabecalho">
+        <h1 class="logo">Robo<span>4.0</span></h1>
+        <button id="botaoMenu">☰</button>
+
+        <nav id="menu">
+            <a href="../index.html">Início</a>
+            <a href="../index.html#conceitos">Conceitos</a>
+            <a href="../index.html#catalogo">Robôs</a>
+            <a href="../index.html#comparativo">Comparativo</a>
+        </nav>
+    </header>
+
+    <main class="paginaRobo">
+        <section class="heroRobo">
+            <div class="textoHero">
+                <p class="miniTitulo">INDÚSTRIA 4.0</p>
+
+                <h1>ROBÔ <span>ARTICULADO</span></h1>
+
+                <p>O robô articulado possui diversas juntas rotativas, permitindo movimentos semelhantes ao braço humano. É o modelo mais utilizado na indústria devido à sua grande flexibilidade.</p>
+
+                <div class="heroBotoes">
+                    <a href="#informacoes" class="botaoPrincipal">Conhecer</a>
+                    <a href="../index.html#catalogo" class="botaoSecundario">Voltar</a>
+                </div>
+            </div>
+
+            <div class="imagemHero">
+                <div class="circuloRobo"></div>
+                <img src="../assets/img/articulado.png">
+            </div>
+        </section>
+
+        <section id="informacoes" class="informacoes">
+            <div class="infoCard">
+                <h2>Como funciona</h2>
+                <p>Cada junta é movimentada por servomotores, permitindo posicionar a ferramenta em praticamente qualquer direção.</p>
+            </div>
+
+            <div class="infoCard">
+                <h2>Aplicações</h2>
+                <ul>
+                    <li>Soldagem</li>
+                    <li>Pintura</li>
+                    <li>Montagem</li>
+                    <li>Paletização</li>
+                    <li>Usinagem</li>
+                </ul>
+            </div>
+
+            <div class="infoCard">
+                <h2>Integração IoT</h2>
+                <p>Sensores monitoram torque, temperatura, energia, ciclos e manutenção preditiva.</p>
+            </div>
+
+            <div class="infoCard">
+                <h2>Fabricantes</h2>
+                <ul>
+                    <li>ABB</li>
+                    <li>KUKA</li>
+                    <li>FANUC</li>
+                    <li>Yaskawa</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="estatisticas">
+            <h2>Características</h2>
+
+            <div class="barra">
+                <div class="tituloBarra">Velocidade <span>90%</span></div>
+                <div class="progresso">
+                    <div class="valor velocidade"></div>
+                </div>
+            </div>
+
+            <div class="barra">
+                <div class="tituloBarra">Precisão <span>96%</span></div>
+                <div class="progresso">
+                    <div class="valor precisao"></div>
+                </div>
+            </div>
+
+            <div class="barra">
+                <div class="tituloBarra">Flexibilidade <span>100%</span></div>
+                <div class="progresso">
+                    <div class="valor flexibilidade"></div>
+                </div>
+            </div>
+
+            <div class="barra">
+                <div class="tituloBarra">Carga <span>85%</span></div>
+                <div class="progresso">
+                    <div class="valor carga"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <h2>Funcionamento</h2>
+
+            <div class="linhaTempo">
+                <div class="etapa">
+                    <h3>1</h3>
+                    <p>Recebe comandos do controlador.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>2</h3>
+                    <p>Servomotores movimentam as juntas.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>3</h3>
+                    <p>Sensores corrigem a trajetória.</p>
+                </div>
+
+                <div class="etapa">
+                    <h3>4</h3>
+                    <p>Executa a tarefa com precisão.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="voltarTopo">↑</button>
+
+    <script src="../script.js"></script>
+</body>
+</html>

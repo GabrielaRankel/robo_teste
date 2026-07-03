@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robótica Industrial 4.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <header class="cabecalho">
+        <h1 class="logo">
+            Robo<span>4.0</span>
+        </h1>
+
+        <button id="botaoMenu">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#conceitos">Conceitos</a>
+            <a href="#catalogo">Robôs</a>
+            <a href="#comparativo">Comparativo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-esquerda">
+                <p class="miniTitulo">
+                    TECNOLOGIA • AUTOMAÇÃO • IoT
+                </p>
+
+                <h2>
+                    ROBÓTICA
+                    <span>INDUSTRIAL</span>
+                    4.0
+                </h2>
+
+                <p>
+                    Explore os principais robôs industriais utilizados na Indústria 4.0,
+                    suas aplicações, vantagens, funcionamento e integração com Internet das Coisas.
+                </p>
+
+                <div class="heroBotoes">
+                    <a href="#catalogo" class="botaoPrincipal">
+                        Explorar Catálogo
+                    </a>
+
+                    <a href="#comparativo" class="botaoSecundario">
+                        Comparativo
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-direita">
+
+                <div class="orbita orbita1"></div>
+                <div class="orbita orbita2"></div>
+                <div class="orbita orbita3"></div>
+
+                <div class="circulo"></div>
+
+                <img class="roboHero" src="assets/img/articulado.png" alt="Robô">
+
+            </div>
+        </section>
+
+        <section class="cardsConceitos" id="conceitos">
+            <div class="tituloSecao">
+                <p>CONHECIMENTO</p>
+
+                <h2>
+                    O universo da automação
+                </h2>
+            </div>
+
+            <div class="gridConceitos">
+                <article>
+                    <h3>
+                        Internet das Coisas
+                    </h3>
+
+                    <p>
+                        Conecta sensores, máquinas e sistemas para troca de informações em tempo real.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>
+                        Robótica
+                    </h3>
+
+                    <p>
+                        Manipuladores industriais executam tarefas repetitivas com velocidade e precisão.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>
+                        Automação
+                    </h3>
+
+                    <p>
+                        Reduz erros humanos e aumenta produtividade e qualidade.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>
+                        Indústria 4.0
+                    </h3>
+
+                    <p>
+                        Integra inteligência artificial, robôs e IoT em um mesmo ambiente.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalogo" id="catalogo">
+            <div class="tituloSecao">
+                <p>CATÁLOGO</p>
+
+                <h2>
+                    Escolha um robô
+                </h2>
+            </div>
+
+            <div class="filtros">
+                <input type="text" id="campoPesquisa" placeholder="Pesquisar robô...">
+
+                <select id="campoFiltro">
+                    <option value="todos">
+                        Todas aplicações
+                    </option>
+
+                    <option value="montagem">
+                        Montagem
+                    </option>
+
+                    <option value="soldagem">
+                        Soldagem
+                    </option>
+
+                    <option value="paletizacao">
+                        Paletização
+                    </option>
+
+                    <option value="embalagem">
+                        Embalagem
+                    </option>
+
+                    <option value="inspecao">
+                        Inspeção
+                    </option>
+                </select>
+            </div>
+
+            <section class="catalogoGrid" id="listaRobos">
+
+                <a href="robos/cartesiano.html" class="roboCard azul" data-categoria="paletizacao">
+                    <div class="numero">01</div>
+                    <img src="assets/img/cartesiano.png" alt="">
+                    <div class="conteudoCard">
+                        <span>3 Eixos</span>
+                        <h2>Cartesiano</h2>
+                        <p>Precisão extrema para movimentos lineares.</p>
+                    </div>
+                </a>
+
+                <a href="robos/scara.html" class="roboCard roxo" data-categoria="montagem">
+                    <div class="numero">02</div>
+                    <img src="assets/img/scara.png" alt="">
+                    <div class="conteudoCard">
+                        <span>4 Eixos</span>
+                        <h2>SCARA</h2>
+                        <p>Ideal para montagem de alta velocidade.</p>
+                    </div>
+                </a>
+
+                <a href="robos/articulado.html" class="roboCard rosa grande" data-categoria="soldagem">
+                    <div class="numero">03</div>
+                    <img src="assets/img/articulado.png" alt="">
+                    <div class="conteudoCard">
+                        <span>6 Eixos</span>
+                        <h2>Articulado</h2>
+                        <p>O robô industrial mais utilizado do mundo.</p>
+                    </div>
+                </a>
+
+                <a href="robos/cilindrico.html" class="roboCard verde" data-categoria="montagem">
+                    <div class="numero">04</div>
+                    <img src="assets/img/cilindrico.png" alt="">
+                    <div class="conteudoCard">
+                        <span>Cilíndrico</span>
+                        <h2>Cilíndrico</h2>
+                        <p>Excelente para carga e descarga.</p>
+                    </div>
+                </a>
+
+                <a href="robos/delta.html" class="roboCard amarelo" data-categoria="embalagem">
+                    <div class="numero">05</div>
+                    <img src="assets/img/delta.png" alt="">
+                    <div class="conteudoCard">
+                        <span>Paralelo</span>
+                        <h2>Delta</h2>
+                        <p>Velocidade extremamente alta.</p>
+                    </div>
+                </a>
+
+                <a href="robos/polar.html" class="roboCard vermelho" data-categoria="soldagem">
+                    <div class="numero">06</div>
+                    <img src="assets/img/polar.png" alt="">
+                    <div class="conteudoCard">
+                        <span>Esférico</span>
+                        <h2>Polar</h2>
+                        <p>Grande alcance para operações pesadas.</p>
+                    </div>
+                </a>
+
+                <a href="robos/cobot.html" class="roboCard ciano" data-categoria="inspecao">
+                    <div class="numero">07</div>
+                    <img src="assets/img/cobot.png" alt="">
+                    <div class="conteudoCard">
+                        <span>Colaborativo</span>
+                        <h2>Cobot</h2>
+                        <p>Projetado para trabalhar ao lado de pessoas.</p>
+                    </div>
+                </a>
+
+            </section>
+        </section>
+
+        <section class="comparativo" id="comparativo">
+            <div class="tituloSecao">
+                <p>COMPARATIVO</p>
+
+                <h2>
+                    Escolha o robô ideal
+                </h2>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Robô</th>
+                        <th>Movimento</th>
+                        <th>Ponto forte</th>
+                        <th>Aplicação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cartesiano</td>
+                        <td>Linear</td>
+                        <td>Precisão</td>
+                        <td>Paletização</td>
+                    </tr>
+
+                    <tr>
+                        <td>SCARA</td>
+                        <td>Horizontal</td>
+                        <td>Velocidade</td>
+                        <td>Montagem</td>
+                    </tr>
+
+                    <tr>
+                        <td>Articulado</td>
+                        <td>Rotativo</td>
+                        <td>Flexibilidade</td>
+                        <td>Soldagem</td>
+                    </tr>
+
+                    <tr>
+                        <td>Delta</td>
+                        <td>Paralelo</td>
+                        <td>Rapidez</td>
+                        <td>Embalagem</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cobot</td>
+                        <td>Colaborativo</td>
+                        <td>Segurança</td>
+                        <td>Inspeção</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <button id="voltarTopo">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+    <footer>
+
+        <h2>Robótica Industrial 4.0</h2>
+
+        <p>
+            Projeto educativo desenvolvido para apresentar os principais robôs industriais, suas aplicações, integração
+            com IoT e funcionamento dentro da Indústria 4.0.
+        </p>
+
+        <small>
+            © 2026 • Robo4.0
+        </small>
+
+    </footer>
+</body>
+
+</html>
