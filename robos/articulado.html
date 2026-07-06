@@ -25,56 +25,112 @@
 
     <main class="paginaRobo">
         <section class="heroRobo">
+        
             <div class="textoHero">
+        
                 <p class="miniTitulo">INDÚSTRIA 4.0</p>
-
+        
                 <h1>ROBÔ <span>ARTICULADO</span></h1>
+        
 
-                <p>O robô articulado possui diversas juntas rotativas, permitindo movimentos semelhantes ao braço humano. É o modelo mais utilizado na indústria devido à sua grande flexibilidade.</p>
+                <p>
+O robô articulado é amplamente utilizado em automação industrial: possui juntas rotativas
+                    semelhantes aos realizados pelo braço humano. Essa arquitetura garante grande flexibilidade e
+                    versatilidade para operar em diferentes posições e orientações.
+                </p>
+        
 
                 <div class="heroBotoes">
-                    <a href="#informacoes" class="botaoPrincipal">Conhecer</a>
+        
+                    <a href="#conceito" class="botaoPrincipal">Conhecer</a>
                     <a href="../index.html#catalogo" class="botaoSecundario">Voltar</a>
                 </div>
+        
             </div>
+        
 
             <div class="imagemHero">
+        
                 <div class="circuloRobo"></div>
-                <img src="../assets/img/articulado.png">
+                <img src="../assets/img/articulado.png" alt="Robô Articulado">
             </div>
         </section>
 
         <section id="informacoes" class="informacoes">
-            <div class="infoCard">
-                <h2>Como funciona</h2>
-                <p>Cada junta é movimentada por servomotores, permitindo posicionar a ferramenta em praticamente qualquer direção.</p>
+
+            <div class="infoCard" id="conceito">
+                <h2>Conceito</h2>
+                <p>
+                    Robôs articulados (multi-juntas) são projetados para executar tarefas variadas com alta flexibilidade
+                    de orientação do efetuador, graças à combinação de várias juntas rotativas controladas.
+                </p>
             </div>
 
             <div class="infoCard">
-                <h2>Aplicações</h2>
+                <h2>Princípio de funcionamento</h2>
+                <p>
+                    Cada junta é movimentada por servomotores, permitindo posicionar o efetuador em praticamente qualquer direção
+                    dentro da área de trabalho, com correções por encoders e/ou sensores.
+                </p>
+            </div>
+
+            <div class="infoCard">
+                <h2>Principais características técnicas</h2>
+                <ul>
+                    <li>Múltiplas juntas rotativas (alta flexibilidade)</li>
+                    <li>Boa repetibilidade e precisão de trajetória</li>
+                    <li>Capacidade para ferramentas diversas (cabeça/eixo de punho)</li>
+                    <li>Programação por trajetórias e movimentos (PTP/Linear)</li>
+                    <li>Integração com sistemas de visão e segurança</li>
+                </ul>
+            </div>
+
+            <div class="infoCard">
+                <h2>Aplicações industriais</h2>
                 <ul>
                     <li>Soldagem</li>
                     <li>Pintura</li>
-                    <li>Montagem</li>
-                    <li>Paletização</li>
-                    <li>Usinagem</li>
+                    <li>Montagem e manipulação de peças</li>
+                    <li>Paletização e movimentação</li>
+                    <li>Usinagem e acabamento assistido</li>
                 </ul>
             </div>
 
             <div class="infoCard">
-                <h2>Integração IoT</h2>
-                <p>Sensores monitoram torque, temperatura, energia, ciclos e manutenção preditiva.</p>
+                <h2>Integração com sistemas de automação e IoT</h2>
+                <p>
+                    Pode integrar sensores e controladores para monitorar torque, temperatura, energia e ciclos.
+                    Em arquiteturas IoT, os dados podem ser compartilhados com MES/SCADA para rastreabilidade,
+                    análise de OEE e manutenção preditiva.
+                </p>
             </div>
 
             <div class="infoCard">
-                <h2>Fabricantes</h2>
-                <ul>
-                    <li>ABB</li>
-                    <li>KUKA</li>
-                    <li>FANUC</li>
-                    <li>Yaskawa</li>
-                </ul>
+                <h2>Modelos comerciais</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Fabricante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IRB series (ex.: IRB 760)</td>
+                            <td>ABB</td>
+                        </tr>
+                        <tr>
+                            <td>KR series (ex.: KR 210)</td>
+                            <td>KUKA</td>
+                        </tr>
+                        <tr>
+                            <td>R series (ex.: FANUC LR Mate)</td>
+                            <td>FANUC</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
         </section>
 
         <section class="estatisticas">
@@ -141,3 +197,4 @@
     <script src="../script.js"></script>
 </body>
 </html>
+

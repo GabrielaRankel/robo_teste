@@ -47,7 +47,7 @@ ROBÔ
 
 <p>
 
-O robô cartesiano realiza movimentos lineares nos eixos X, Y e Z. Sua elevada precisão o torna ideal para processos automatizados que exigem repetibilidade.
+O robô cartesiano é um manipulador industrial que se movimenta em três eixos lineares (X, Y e Z), formando um sistema de coordenadas cartesianas. A atuação precisa em linha reta facilita o posicionamento repetível, tornando-o excelente para processos automatizados que dependem de alta exatidão.
 
 </p>
 
@@ -83,7 +83,7 @@ Voltar
 
 <p>
 
-Movimenta-se em três eixos lineares utilizando guias, fusos ou correias controladas eletronicamente.
+Cada eixo possui um motor independente que movimenta o robô em linha reta, possibilitando posicionamento extremamente preciso. Na prática, guias, fusos ou correias controladas eletronicamente sustentam o movimento coordenado para atingir a posição desejada.
 
 </p>
 
@@ -95,15 +95,17 @@ Movimenta-se em três eixos lineares utilizando guias, fusos ou correias control
 
 <ul>
 
-<li>Paletização</li>
-
 <li>Impressão 3D</li>
 
-<li>Máquinas CNC</li>
+<li>Corte CNC</li>
 
-<li>Corte</li>
+<li>Paletização</li>
 
-<li>Dosagem</li>
+<li>Soldagem</li>
+
+<li>Movimentação de peças</li>
+
+<li>Integração com processos de dosagem</li>
 
 </ul>
 
@@ -115,9 +117,79 @@ Movimenta-se em três eixos lineares utilizando guias, fusos ou correias control
 
 <p>
 
-Permite monitoramento remoto de posição, velocidade, ciclos de produção e manutenção preventiva.
+O robô cartesiano pode enviar e receber dados de produção para sistemas de supervisão e análise. Entre os protocolos mais utilizados estão MQTT, OPC UA, Ethernet/IP e Profinet, permitindo monitoramento remoto, manutenção preditiva e coleta de dados em tempo real.
 
 </p>
+
+</div>
+
+<div class="infoCard">
+
+<h2>Características técnicas</h2>
+
+<ul>
+
+<li>3 ou mais eixos lineares</li>
+
+<li>Alta precisão</li>
+
+<li>Grande capacidade de carga</li>
+
+<li>Fácil programação</li>
+
+<li>Baixa manutenção</li>
+
+</ul>
+
+</div>
+
+<div class="infoCard">
+
+<h2>Modelos comerciais</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Modelo</th>
+
+<th>Fabricante</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>EZS Series</td>
+
+<td>Yamaha</td>
+
+</tr>
+
+<tr>
+
+<td>H-Bot Cartesian</td>
+
+<td>Festo</td>
+
+</tr>
+
+<tr>
+
+<td>Cartesian Robot Series</td>
+
+<td>Bosch Rexroth</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </div>
 
@@ -207,22 +279,22 @@ Carga
 
 <div class="etapa">
 <h3>1</h3>
-<p>Recebe as coordenadas do controlador.</p>
+<p>Recebe as coordenadas e parâmetros de operação do controlador.</p>
 </div>
 
 <div class="etapa">
 <h3>2</h3>
-<p>Move-se pelos eixos X, Y e Z.</p>
+<p>Move-se pelos eixos X, Y e Z, com atuação em linha reta e posicionamento preciso.</p>
 </div>
 
 <div class="etapa">
 <h3>3</h3>
-<p>Posiciona a ferramenta com alta precisão.</p>
+<p>Posiciona a ferramenta e realiza a etapa do processo automaticamente.</p>
 </div>
 
 <div class="etapa">
 <h3>4</h3>
-<p>Executa a operação automaticamente.</p>
+<p>Executa a operação com repetibilidade e registra dados para acompanhamento e manutenção.</p>
 </div>
 
 </div>
@@ -238,4 +310,5 @@ Carga
 <script src="../script.js"></script>
 
 </body>
+
 </html>
