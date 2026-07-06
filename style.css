@@ -731,6 +731,48 @@ BOTÃO TOPO
 }
 
 /*===========================
+IMAGENS (RODAPE)
+===========================*/
+.imagensRodape {
+    padding: 40px 8% 90px;
+}
+
+.imagensRodapeGrid {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.imagensRodapeGrid figure {
+    margin: 0;
+    padding: 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .08);
+    backdrop-filter: blur(18px);
+}
+
+.imagensRodapeGrid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+@media(max-width:992px){
+    .imagensRodapeGrid img{height:180px;}
+}
+
+@media(max-width:768px){
+    .imagensRodape{padding: 30px 22px 70px;}
+    .imagensRodapeGrid{grid-template-columns: 1fr;}
+    .imagensRodapeGrid img{height: 200px;}
+}
+
+/*===========================
 SCROLLBAR
 ===========================*/
 ::-webkit-scrollbar {
