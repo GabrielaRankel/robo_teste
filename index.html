@@ -30,6 +30,8 @@
             <a href="#inicio">Início</a>
             <a href="#conceitos">Conceitos</a>
             <a href="#catalogo">Robôs</a>
+            <a href="#sensores">Sensores</a>
+            <a href="#arduino">Arduino</a>
             <a href="#comparativo">Comparativo</a>
         </nav>
     </header>
@@ -48,7 +50,7 @@
                 </h2>
 
                 <p>
-                    Explore os principais robôs industriais utilizados na Indústria 4.0,
+                    Explore os principais robôs industriais e sensores utilizados na Indústria 4.0,
                     suas aplicações, vantagens, funcionamento e integração com Internet das Coisas.
                 </p>
 
@@ -129,6 +131,19 @@
                         Integra inteligência artificial, robôs e IoT em um mesmo ambiente.
                     </p>
                 </article>
+            </div>
+        </section>
+
+        <section class="cardsConceitos" id="sensoriamento">
+            <div class="tituloSecao">
+                <p>SENSORIAMENTO</p>
+                <h2>Dados que movimentam a Indústria 4.0</h2>
+            </div>
+            <div class="gridConceitos">
+                <article><h3>Conceito de sensoriamento</h3><p>Sensoriamento é a aquisição de grandezas físicas ou ambientais por meio de sensores, transformando fenômenos como temperatura, luz, distância, pressão ou corrente em sinais que um sistema consegue interpretar.</p></article>
+                <article><h3>Automação industrial</h3><p>Sensores fornecem dados para monitorar máquinas e processos, detectar condições anormais e apoiar decisões de controle, aumentando repetibilidade e segurança.</p></article>
+                <article><h3>Sensores + comunicação</h3><p>Depois da aquisição, os dados podem ser processados por Arduino, ESP32, Raspberry Pi ou CLPs e enviados por interfaces e protocolos adequados para supervisão e sistemas IoT.</p></article>
+                <article><h3>Monitoramento e controle</h3><p>Uma leitura de sensor pode gerar uma ação: ligar um motor, acionar uma bomba, emitir um alarme, ajustar iluminação ou registrar dados para análise.</p></article>
             </div>
         </section>
 
@@ -246,6 +261,352 @@
             </section>
         </section>
 
+        <section class="catalogo" id="sensores">
+            <div class="tituloSecao">
+                <p>CATÁLOGO DE SENSORES</p>
+                <h2>Explore os sensores IoT e industriais</h2>
+            </div>
+            <div class="filtros">
+                <input type="text" id="campoPesquisaSensor" placeholder="Pesquisar sensor...">
+                <select id="campoFiltroSensor"><option value="todos">Todas categorias</option><option value="Temperatura e Umidade">Temperatura e Umidade</option><option value="Temperatura">Temperatura</option><option value="Luminosidade">Luminosidade</option><option value="Distância">Distância</option><option value="Movimento">Movimento</option><option value="Proximidade">Proximidade</option><option value="Gás">Gás</option><option value="Umidade">Umidade</option><option value="Chuva">Chuva</option><option value="Nível">Nível</option><option value="Fluxo">Fluxo</option><option value="Corrente">Corrente</option><option value="Tensão">Tensão</option><option value="Vibração">Vibração</option><option value="Rotação">Rotação</option><option value="RFID">RFID</option><option value="Peso">Peso</option><option value="Som">Som</option><option value="Chama">Chama</option><option value="Encoder">Encoder</option></select>
+            </div>
+            <section class="catalogoGrid" id="listaSensores">
+                <a href="sensores/dht11.html" class="roboCard sensorCard" data-categoria-sensor="Temperatura e Umidade">
+                    <div class="numero">01</div>
+                    <img src="assets/img/sensores/dht11.svg" alt="Sensor DHT11">
+                    <div class="conteudoCard">
+                        <span>Temperatura e Umidade</span>
+                        <h2>DHT11</h2>
+                        <p>Estações meteorológicas simples, HVAC, monitoramento ambiental, automação residencial e protótipos IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/dht22.html" class="roboCard sensorCard" data-categoria-sensor="Temperatura e Umidade">
+                    <div class="numero">02</div>
+                    <img src="assets/img/sensores/dht22.svg" alt="Sensor DHT22">
+                    <div class="conteudoCard">
+                        <span>Temperatura e Umidade</span>
+                        <h2>DHT22</h2>
+                        <p>Monitoramento climático, estufas, HVAC, armazenamento e projetos IoT de ambiente.</p>
+                    </div>
+                </a>
+                <a href="sensores/lm35.html" class="roboCard sensorCard" data-categoria-sensor="Temperatura">
+                    <div class="numero">03</div>
+                    <img src="assets/img/sensores/lm35.svg" alt="Sensor LM35">
+                    <div class="conteudoCard">
+                        <span>Temperatura</span>
+                        <h2>LM35</h2>
+                        <p>Monitoramento térmico, fontes de alimentação, máquinas, eletrônica e aquisição de temperatura.</p>
+                    </div>
+                </a>
+                <a href="sensores/ds18b20.html" class="roboCard sensorCard" data-categoria-sensor="Temperatura">
+                    <div class="numero">04</div>
+                    <img src="assets/img/sensores/ds18b20.svg" alt="Sensor DS18B20">
+                    <div class="conteudoCard">
+                        <span>Temperatura</span>
+                        <h2>DS18B20</h2>
+                        <p>Monitoramento de tubulações, tanques, sistemas térmicos, equipamentos e ambientes distribuídos.</p>
+                    </div>
+                </a>
+                <a href="sensores/ldr.html" class="roboCard sensorCard" data-categoria-sensor="Luminosidade">
+                    <div class="numero">05</div>
+                    <img src="assets/img/sensores/ldr.svg" alt="Sensor LDR">
+                    <div class="conteudoCard">
+                        <span>Luminosidade</span>
+                        <h2>LDR</h2>
+                        <p>Controle automático de iluminação, sensores crepusculares, sistemas de presença luminosa e protótipos IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/bh1750.html" class="roboCard sensorCard" data-categoria-sensor="Luminosidade">
+                    <div class="numero">06</div>
+                    <img src="assets/img/sensores/bh1750.svg" alt="Sensor BH1750">
+                    <div class="conteudoCard">
+                        <span>Luminosidade</span>
+                        <h2>BH1750</h2>
+                        <p>Iluminação inteligente, automação predial, agricultura, controle de brilho e monitoramento ambiental.</p>
+                    </div>
+                </a>
+                <a href="sensores/hc-sr04.html" class="roboCard sensorCard" data-categoria-sensor="Distância">
+                    <div class="numero">07</div>
+                    <img src="assets/img/sensores/hc-sr04.svg" alt="Sensor HC-SR04">
+                    <div class="conteudoCard">
+                        <span>Distância</span>
+                        <h2>HC-SR04</h2>
+                        <p>Robótica, detecção de obstáculos, medição de nível em protótipos e automação de pequenos sistemas.</p>
+                    </div>
+                </a>
+                <a href="sensores/pir-hc-sr501.html" class="roboCard sensorCard" data-categoria-sensor="Movimento">
+                    <div class="numero">08</div>
+                    <img src="assets/img/sensores/pir-hc-sr501.svg" alt="Sensor PIR HC-SR501">
+                    <div class="conteudoCard">
+                        <span>Movimento</span>
+                        <h2>PIR HC-SR501</h2>
+                        <p>Iluminação automática, alarmes, monitoramento de presença e automação predial.</p>
+                    </div>
+                </a>
+                <a href="sensores/lj12a3.html" class="roboCard sensorCard" data-categoria-sensor="Proximidade">
+                    <div class="numero">09</div>
+                    <img src="assets/img/sensores/lj12a3.svg" alt="Sensor Sensor Indutivo LJ12A3">
+                    <div class="conteudoCard">
+                        <span>Proximidade</span>
+                        <h2>Sensor Indutivo LJ12A3</h2>
+                        <p>Detecção de peças metálicas, fim de curso sem contato, contagem e posicionamento em máquinas.</p>
+                    </div>
+                </a>
+                <a href="sensores/lj18a3.html" class="roboCard sensorCard" data-categoria-sensor="Proximidade">
+                    <div class="numero">10</div>
+                    <img src="assets/img/sensores/lj18a3.svg" alt="Sensor Sensor Capacitivo LJ18A3">
+                    <div class="conteudoCard">
+                        <span>Proximidade</span>
+                        <h2>Sensor Capacitivo LJ18A3</h2>
+                        <p>Detecção de nível, presença de materiais, contagem e automação de processos.</p>
+                    </div>
+                </a>
+                <a href="sensores/mq2.html" class="roboCard sensorCard" data-categoria-sensor="Gás">
+                    <div class="numero">11</div>
+                    <img src="assets/img/sensores/mq2.svg" alt="Sensor MQ-2">
+                    <div class="conteudoCard">
+                        <span>Gás</span>
+                        <h2>MQ-2</h2>
+                        <p>Detecção de vazamentos, alarmes de fumaça e protótipos de monitoramento de gases.</p>
+                    </div>
+                </a>
+                <a href="sensores/mq135.html" class="roboCard sensorCard" data-categoria-sensor="Gás">
+                    <div class="numero">12</div>
+                    <img src="assets/img/sensores/mq135.svg" alt="Sensor MQ-135">
+                    <div class="conteudoCard">
+                        <span>Gás</span>
+                        <h2>MQ-135</h2>
+                        <p>Monitoramento da qualidade do ar, estufas, ambientes internos e projetos IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/umidade-solo.html" class="roboCard sensorCard" data-categoria-sensor="Umidade">
+                    <div class="numero">13</div>
+                    <img src="assets/img/sensores/umidade-solo.svg" alt="Sensor Sensor Capacitivo de Umidade do Solo">
+                    <div class="conteudoCard">
+                        <span>Umidade</span>
+                        <h2>Sensor Capacitivo de Umidade do Solo</h2>
+                        <p>Agricultura inteligente, irrigação automática, jardins e estufas IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/fc37.html" class="roboCard sensorCard" data-categoria-sensor="Chuva">
+                    <div class="numero">14</div>
+                    <img src="assets/img/sensores/fc37.svg" alt="Sensor FC-37">
+                    <div class="conteudoCard">
+                        <span>Chuva</span>
+                        <h2>FC-37</h2>
+                        <p>Detecção de chuva, automação de coberturas, estações meteorológicas simples e IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/boia.html" class="roboCard sensorCard" data-categoria-sensor="Nível">
+                    <div class="numero">15</div>
+                    <img src="assets/img/sensores/boia.svg" alt="Sensor Sensor de Nível (Boia)">
+                    <div class="conteudoCard">
+                        <span>Nível</span>
+                        <h2>Sensor de Nível (Boia)</h2>
+                        <p>Reservatórios, caixas d’água, proteção contra transbordamento e automação de bombas.</p>
+                    </div>
+                </a>
+                <a href="sensores/yf-s201.html" class="roboCard sensorCard" data-categoria-sensor="Fluxo">
+                    <div class="numero">16</div>
+                    <img src="assets/img/sensores/yf-s201.svg" alt="Sensor YF-S201">
+                    <div class="conteudoCard">
+                        <span>Fluxo</span>
+                        <h2>YF-S201</h2>
+                        <p>Medição de consumo de água, automação hidráulica, irrigação e projetos IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/acs712.html" class="roboCard sensorCard" data-categoria-sensor="Corrente">
+                    <div class="numero">17</div>
+                    <img src="assets/img/sensores/acs712.svg" alt="Sensor ACS712">
+                    <div class="conteudoCard">
+                        <span>Corrente</span>
+                        <h2>ACS712</h2>
+                        <p>Monitoramento de motores, fontes, cargas elétricas, proteção e telemetria de energia.</p>
+                    </div>
+                </a>
+                <a href="sensores/zmpt101b.html" class="roboCard sensorCard" data-categoria-sensor="Tensão">
+                    <div class="numero">18</div>
+                    <img src="assets/img/sensores/zmpt101b.svg" alt="Sensor ZMPT101B">
+                    <div class="conteudoCard">
+                        <span>Tensão</span>
+                        <h2>ZMPT101B</h2>
+                        <p>Monitoramento de rede AC, medidores de energia e projetos de automação elétrica.</p>
+                    </div>
+                </a>
+                <a href="sensores/sw420.html" class="roboCard sensorCard" data-categoria-sensor="Vibração">
+                    <div class="numero">19</div>
+                    <img src="assets/img/sensores/sw420.svg" alt="Sensor SW-420">
+                    <div class="conteudoCard">
+                        <span>Vibração</span>
+                        <h2>SW-420</h2>
+                        <p>Detecção de vibração, alarmes, monitoramento simples de máquinas e protótipos.</p>
+                    </div>
+                </a>
+                <a href="sensores/a3144.html" class="roboCard sensorCard" data-categoria-sensor="Rotação">
+                    <div class="numero">20</div>
+                    <img src="assets/img/sensores/a3144.svg" alt="Sensor Sensor Hall A3144">
+                    <div class="conteudoCard">
+                        <span>Rotação</span>
+                        <h2>Sensor Hall A3144</h2>
+                        <p>Medição de rotação, velocidade de motores, detecção de posição e contagem de ciclos.</p>
+                    </div>
+                </a>
+                <a href="sensores/mfrc522.html" class="roboCard sensorCard" data-categoria-sensor="RFID">
+                    <div class="numero">21</div>
+                    <img src="assets/img/sensores/mfrc522.svg" alt="Sensor MFRC522">
+                    <div class="conteudoCard">
+                        <span>RFID</span>
+                        <h2>MFRC522</h2>
+                        <p>Controle de acesso, identificação, rastreamento e automação.</p>
+                    </div>
+                </a>
+                <a href="sensores/hx711.html" class="roboCard sensorCard" data-categoria-sensor="Peso">
+                    <div class="numero">22</div>
+                    <img src="assets/img/sensores/hx711.svg" alt="Sensor Célula de Carga + HX711">
+                    <div class="conteudoCard">
+                        <span>Peso</span>
+                        <h2>Célula de Carga + HX711</h2>
+                        <p>Balanças, dosagem, controle de estoque e sistemas de pesagem IoT.</p>
+                    </div>
+                </a>
+                <a href="sensores/ky037.html" class="roboCard sensorCard" data-categoria-sensor="Som">
+                    <div class="numero">23</div>
+                    <img src="assets/img/sensores/ky037.svg" alt="Sensor KY-037">
+                    <div class="conteudoCard">
+                        <span>Som</span>
+                        <h2>KY-037</h2>
+                        <p>Detecção de ruído, comandos simples por som, alarmes e monitoramento ambiental.</p>
+                    </div>
+                </a>
+                <a href="sensores/flame-ir.html" class="roboCard sensorCard" data-categoria-sensor="Chama">
+                    <div class="numero">24</div>
+                    <img src="assets/img/sensores/flame-ir.svg" alt="Sensor Sensor de Chama IR">
+                    <div class="conteudoCard">
+                        <span>Chama</span>
+                        <h2>Sensor de Chama IR</h2>
+                        <p>Detecção experimental de chama, alarmes e protótipos de segurança.</p>
+                    </div>
+                </a>
+                <a href="sensores/ky040.html" class="roboCard sensorCard" data-categoria-sensor="Encoder">
+                    <div class="numero">25</div>
+                    <img src="assets/img/sensores/ky040.svg" alt="Sensor Encoder Incremental KY-040">
+                    <div class="conteudoCard">
+                        <span>Encoder</span>
+                        <h2>Encoder Incremental KY-040</h2>
+                        <p>Controle de posição, menus, ajuste de parâmetros e controle de rotação.</p>
+                    </div>
+                </a>
+            </section>
+        </section>
+
+        <section class="arduinoSecao" id="arduino">
+            <div class="tituloSecao">
+                <p>ARDUINO</p>
+                <h2>Características, funcionamento e exemplos</h2>
+            </div>
+            <div class="arduinoIntroducao">
+                <div class="infoCard"><h2>Conceito</h2><p>Arduino é uma plataforma de prototipagem eletrônica formada por placas com microcontrolador e um ambiente de programação. Ela permite ler entradas, processar dados e controlar saídas de forma acessível.</p></div>
+                <div class="infoCard"><h2>Funcionamento</h2><p>O programa é gravado no microcontrolador. Sensores ligados às entradas fornecem sinais analógicos ou digitais; o código interpreta esses dados e aciona atuadores ou envia informações para outros sistemas.</p></div>
+                <div class="infoCard"><h2>Integração IoT</h2><p>Em conjunto com módulos de comunicação ou placas como ESP32, o sistema pode enviar as leituras para aplicações, dashboards e serviços IoT. A interface do sensor deve ser compatível com a tensão e o protocolo usados.</p></div>
+            </div>
+            <div class="codigoGrid">
+                <article class="codigoCard"><h3>DHT11 — temperatura e umidade</h3><pre><code>#include &lt;DHT.h&gt;
+#define DHTPIN 2
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+void setup(){ Serial.begin(9600); dht.begin(); }
+void loop(){
+  Serial.println(dht.readTemperature());
+  Serial.println(dht.readHumidity());
+  delay(2000);
+}</code></pre></article>
+                <article class="codigoCard"><h3>DHT22 — maior precisão</h3><pre><code>#include &lt;DHT.h&gt;
+DHT dht(2, DHT22);
+void setup(){ Serial.begin(9600); dht.begin(); }
+void loop(){
+  Serial.print(dht.readTemperature());
+  Serial.print(" C / ");
+  Serial.print(dht.readHumidity());
+  Serial.println(" %");
+  delay(2000);
+}</code></pre></article>
+                <article class="codigoCard"><h3>LM35 — temperatura analógica</h3><pre><code>const int sensor = A0;
+void setup(){ Serial.begin(9600); }
+void loop(){
+  int leitura = analogRead(sensor);
+  float tensao = leitura * 5.0 / 1023.0;
+  float temperatura = tensao * 100.0;
+  Serial.println(temperatura);
+  delay(500);
+}</code></pre></article>
+                <article class="codigoCard"><h3>DS18B20 — 1-Wire</h3><pre><code>#include &lt;OneWire.h&gt;
+#include &lt;DallasTemperature.h&gt;
+OneWire oneWire(2);
+DallasTemperature sensores(&amp;oneWire);
+void setup(){ Serial.begin(9600); sensores.begin(); }
+void loop(){
+  sensores.requestTemperatures();
+  Serial.println(sensores.getTempCByIndex(0));
+  delay(1000);
+}</code></pre></article>
+                <article class="codigoCard"><h3>LDR — luminosidade</h3><pre><code>const int ldr = A0;
+void setup(){ Serial.begin(9600); }
+void loop(){
+  int luz = analogRead(ldr);
+  if(luz &lt; 400) digitalWrite(13, HIGH);
+  else digitalWrite(13, LOW);
+  Serial.println(luz);
+  delay(200);
+}</code></pre></article>
+                <article class="codigoCard"><h3>BH1750 — lux via I2C</h3><pre><code>#include &lt;BH1750.h&gt;
+#include &lt;Wire.h&gt;
+BH1750 luz;
+void setup(){
+  Wire.begin(); luz.begin();
+  Serial.begin(9600);
+}
+void loop(){
+  Serial.println(luz.readLightLevel());
+  delay(500);
+}</code></pre></article>
+                <article class="codigoCard"><h3>HC-SR04 — distância</h3><pre><code>const int trig=9, echo=10;
+void setup(){ pinMode(trig,OUTPUT); pinMode(echo,INPUT); Serial.begin(9600); }
+void loop(){
+  digitalWrite(trig,LOW); delayMicroseconds(2);
+  digitalWrite(trig,HIGH); delayMicroseconds(10);
+  digitalWrite(trig,LOW);
+  long t=pulseIn(echo,HIGH);
+  Serial.println(t*0.0343/2);
+  delay(200);
+}</code></pre></article>
+                <article class="codigoCard"><h3>PIR HC-SR501 — movimento</h3><pre><code>const int pir=2;
+void setup(){ pinMode(pir,INPUT); Serial.begin(9600); }
+void loop(){
+  if(digitalRead(pir)) Serial.println("Movimento");
+  else Serial.println("Sem movimento");
+  delay(200);
+}</code></pre></article>
+                <article class="codigoCard"><h3>MQ-2 — gás/fumaça</h3><pre><code>const int mq2=A0;
+void setup(){ Serial.begin(9600); }
+void loop(){
+  int valor=analogRead(mq2);
+  Serial.println(valor);
+  if(valor &gt; 500) digitalWrite(13,HIGH);
+  else digitalWrite(13,LOW);
+  delay(200);
+}</code></pre></article>
+                <article class="codigoCard"><h3>Umidade do solo — irrigação</h3><pre><code>const int solo=A0;
+const int bomba=8;
+void setup(){ pinMode(bomba,OUTPUT); Serial.begin(9600); }
+void loop(){
+  int umidade=analogRead(solo);
+  digitalWrite(bomba, umidade &gt; 600 ? HIGH : LOW);
+  Serial.println(umidade);
+  delay(500);
+}</code></pre></article>
+            </div>
+        </section>
+
         <section class="comparativo" id="comparativo">
             <div class="tituloSecao">
                 <p>COMPARATIVO</p>
@@ -313,11 +674,10 @@
     <footer>
 
 
-        <h2>Robótica Industrial 4.0</h2>
+        <h2>Robótica, Sensoriamento e IoT 4.0</h2>
 
         <p>
-            Projeto educativo desenvolvido para apresentar os principais robôs industriais, suas aplicações, integração
-            com IoT e funcionamento dentro da Indústria 4.0.
+            Projeto educativo desenvolvido para apresentar robôs industriais, sensores IoT, aplicações, integração e funcionamento dentro da Indústria 4.0.
         </p>
 
         <small>
