@@ -1,18 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sensor Capacitivo LJ18A3 | Robo4.0</title><link rel="stylesheet" href="../style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
-<body><div class="bg1"></div><div class="bg2"></div><div class="bg3"></div>
-<header class="cabecalho"><h1 class="logo">Robo<span>4.0</span></h1><button id="botaoMenu">☰</button><nav id="menu"><a href="../index.html">Início</a><a href="../index.html#conceitos">Conceitos</a><a href="../index.html#catalogo">Robôs</a><a href="../index.html#sensores">Sensores</a><a href="../index.html#arduino">Arduino</a><a href="../index.html#comparativo">Comparativo</a></nav></header>
-<main class="paginaRobo paginaSensor"><section class="heroRobo"><div class="textoHero"><p class="miniTitulo">CATÁLOGO • SENSOR 10</p><h1>SENSOR <span>Sensor Capacitivo LJ18A3</span></h1><p>Sensor de proximidade capacitivo para detectar sólidos, líquidos e outros materiais.</p><div class="heroBotoes"><a href="#informacoes" class="botaoPrincipal">Conhecer</a><a href="../index.html#sensores" class="botaoSecundario">Voltar</a></div></div><div class="imagemHero"><div class="circuloRobo"></div><img src="../assets/img/sensores/lj18a3.svg" alt="Ilustração do sensor Sensor Capacitivo LJ18A3"></div></section>
-<section id="informacoes" class="informacoes">
-<div class="infoCard"><h2>Categoria</h2><p>Proximidade</p></div>
-<div class="infoCard"><h2>Conceito</h2><p>Sensor de proximidade capacitivo para detectar sólidos, líquidos e outros materiais.</p></div>
-<div class="infoCard"><h2>Princípio de funcionamento</h2><p>A presença de um objeto altera a capacitância do campo elétrico próximo à face sensora, provocando a comutação da saída.</p></div>
-<div class="infoCard"><h2>Principais especificações técnicas</h2><p>Variantes comuns trabalham em 6–36 V; distância nominal frequentemente entre 5 e 10 mm, conforme modelo; saídas NPN/PNP.</p></div>
-<div class="infoCard"><h2>Tipo de sinal</h2><p>Digital (saída transistor)</p><p class="notaTecnica">Interface principal: Digital / NPN ou PNP.</p></div>
-<div class="infoCard"><h2>Aplicações industriais ou IoT</h2><ul><li>Detecção de nível, presença de materiais, contagem e automação de processos.</li></ul></div>
-<div class="infoCard"><h2>Exemplo de utilização em um projeto</h2><p>Instalar o sensor em um reservatório para detectar a presença de líquido ou material e enviar o estado ao CLP.</p></div>
-<div class="infoCard"><h2>Fabricantes ou modelos comerciais</h2><p>LJ18A3 e variantes NPN/PNP; fabricantes variados.</p></div>
-<div class="infoCard"><h2>Integração</h2><p>O sensor pode ser conectado a Arduino, ESP32 ou Raspberry Pi conforme sua interface elétrica e protocolo. Em um projeto IoT, o dispositivo de controle pode processar a leitura localmente e enviar os dados por Wi-Fi, Ethernet, MQTT ou outro meio de comunicação adequado.</p><p class="notaTecnica">Atenção: módulos didáticos como os listados aqui não devem ser tratados automaticamente como sensores industriais certificados. Verifique tensão, corrente, isolamento, grau de proteção e faixa do modelo antes de uma instalação real.</p></div>
-</section>
-<section class="timeline"><h2>Fluxo de uso</h2><div class="linhaTempo"><div class="etapa"><h3>1</h3><p>O sensor interage com o fenômeno físico.</p></div><div class="etapa"><h3>2</h3><p>O circuito transforma a grandeza em sinal.</p></div><div class="etapa"><h3>3</h3><p>Arduino, ESP32, Raspberry Pi ou CLP lê o sinal.</p></div><div class="etapa"><h3>4</h3><p>O sistema usa o dado para monitorar ou controlar.</p></div></div></section>
-<section class="imagensRodape"><div class="imagensRodapeGrid"><figure><img src="../assets/img/sensores/lj18a3.svg" alt="Ilustração do Sensor Capacitivo LJ18A3"></figure></div></section></main><button id="voltarTopo">↑</button><script src="../script.js"></script></body></html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Capacitivo LJ18A3 | Robo4.0</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <header class="cabecalho">
+        <h1 class="logo">Robo<span>4.0</span></h1><button id="botaoMenu">☰</button>
+        <nav id="menu"><a href="../index.html">Início</a><a href="../index.html#conceitos">Conceitos</a><a
+                href="../index.html#catalogo">Robôs</a><a href="../index.html#sensores">Sensores</a><a
+                href="../index.html#arduino">Arduino</a><a href="../index.html#comparativo">Comparativo</a></nav>
+    </header>
+    <main class="paginaRobo paginaSensor">
+        <section class="heroRobo">
+            <div class="textoHero">
+                <p class="miniTitulo">CATÁLOGO • SENSOR 10</p>
+                <h1>SENSOR <span>Sensor Capacitivo LJ18A3</span></h1>
+                <p>Sensor de proximidade capacitivo para detectar sólidos, líquidos e outros materiais.</p>
+                <div class="heroBotoes"><a href="#informacoes" class="botaoPrincipal">Conhecer</a><a
+                        href="../index.html#sensores" class="botaoSecundario">Voltar</a></div>
+            </div>
+            <div class="imagemHero">
+                <div class="circuloRobo"></div><img src="../assets/img/sensores/lj18a3.png"
+                    alt="Ilustração do sensor Sensor Capacitivo LJ18A3">
+            </div>
+        </section>
+        <section id="informacoes" class="informacoes">
+            <div class="infoCard">
+                <h2>Categoria</h2>
+                <p>Proximidade</p>
+            </div>
+            <div class="infoCard">
+                <h2>Conceito</h2>
+                <p>Sensor de proximidade capacitivo para detectar sólidos, líquidos e outros materiais.</p>
+            </div>
+            <div class="infoCard">
+                <h2>Princípio de funcionamento</h2>
+                <p>A presença de um objeto altera a capacitância do campo elétrico próximo à face sensora, provocando a
+                    comutação da saída.</p>
+            </div>
+            <div class="infoCard">
+                <h2>Principais especificações técnicas</h2>
+                <p>Variantes comuns trabalham em 6–36 V; distância nominal frequentemente entre 5 e 10 mm, conforme
+                    modelo; saídas NPN/PNP.</p>
+            </div>
+            <div class="infoCard">
+                <h2>Tipo de sinal</h2>
+                <p>Digital (saída transistor)</p>
+                <p class="notaTecnica">Interface principal: Digital / NPN ou PNP.</p>
+            </div>
+            <div class="infoCard">
+                <h2>Aplicações industriais ou IoT</h2>
+                <ul>
+                    <li>Detecção de nível, presença de materiais, contagem e automação de processos.</li>
+                </ul>
+            </div>
+            <div class="infoCard">
+                <h2>Exemplo de utilização em um projeto</h2>
+                <p>Instalar o sensor em um reservatório para detectar a presença de líquido ou material e enviar o
+                    estado ao CLP.</p>
+            </div>
+            <div class="infoCard">
+                <h2>Fabricantes ou modelos comerciais</h2>
+                <p>LJ18A3 e variantes NPN/PNP; fabricantes variados.</p>
+            </div>
+            <div class="infoCard">
+                <h2>Integração</h2>
+                <p>O sensor pode ser conectado a Arduino, ESP32 ou Raspberry Pi conforme sua interface elétrica e
+                    protocolo. Em um projeto IoT, o dispositivo de controle pode processar a leitura localmente e enviar
+                    os dados por Wi-Fi, Ethernet, MQTT ou outro meio de comunicação adequado.</p>
+                <p class="notaTecnica">Atenção: módulos didáticos como os listados aqui não devem ser tratados
+                    automaticamente como sensores industriais certificados. Verifique tensão, corrente, isolamento, grau
+                    de proteção e faixa do modelo antes de uma instalação real.</p>
+            </div>
+        </section>
+        <section class="timeline">
+            <h2>Fluxo de uso</h2>
+            <div class="linhaTempo">
+                <div class="etapa">
+                    <h3>1</h3>
+                    <p>O sensor interage com o fenômeno físico.</p>
+                </div>
+                <div class="etapa">
+                    <h3>2</h3>
+                    <p>O circuito transforma a grandeza em sinal.</p>
+                </div>
+                <div class="etapa">
+                    <h3>3</h3>
+                    <p>Arduino, ESP32, Raspberry Pi ou CLP lê o sinal.</p>
+                </div>
+                <div class="etapa">
+                    <h3>4</h3>
+                    <p>O sistema usa o dado para monitorar ou controlar.</p>
+                </div>
+            </div>
+        </section>
+        <section class="imagensRodape">
+            <div class="imagensRodapeGrid">
+                <figure><img src="../assets/img/sensores/lj18a3.png" alt="Ilustração do Sensor Capacitivo LJ18A3">
+                </figure>
+            </div>
+        </section>
+    </main><button id="voltarTopo">↑</button>
+    <script src="../script.js"></script>
+</body>
+
+</html>
