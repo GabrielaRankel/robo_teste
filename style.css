@@ -1726,3 +1726,322 @@ CATALOGO DE SENSORES E ARDUINO
     font-weight: bold;
     cursor: pointer;
 }
+
+
+/* ===========================
+   QUIZ
+=========================== */
+.quizBody {
+    min-height: 100vh;
+}
+
+.quizMain {
+    padding-top: 120px;
+}
+
+.quizHero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 8% 50px;
+}
+
+.quizHero .tituloSecao {
+    margin-bottom: 25px;
+}
+
+.quizHero .tituloSecao h2 span {
+    background: linear-gradient(90deg, var(--azul), var(--rosa));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quizIntro {
+    max-width: 850px;
+    color: #d7e3ef;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.quizInfo {
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.quizInfo div,
+.resultadoDetalhes div {
+    min-width: 150px;
+    padding: 22px 28px;
+    border-radius: 22px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(15px);
+}
+
+.quizInfo strong,
+.resultadoDetalhes strong {
+    display: block;
+    font-family: 'Anton';
+    font-size: 35px;
+    color: var(--azul);
+}
+
+.quizInfo span,
+.resultadoDetalhes span {
+    color: #b9c8d7;
+}
+
+.quizArea {
+    max-width: 1000px;
+    margin: 20px auto 100px;
+    padding: 0 8%;
+}
+
+.quizTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 14px;
+    color: #d7e3ef;
+    font-weight: 600;
+}
+
+.barraQuiz {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#progressoQuiz {
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--azul), var(--rosa));
+    transition: .35s;
+}
+
+.questaoCard {
+    padding: 45px;
+    border-radius: 32px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 25px 70px rgba(0,0,0,.25);
+}
+
+.tagQuestao {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, var(--azul), var(--roxo));
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.questaoCard h3 {
+    font-size: 21px;
+    line-height: 1.75;
+    font-weight: 500;
+    color: #f4f8fc;
+}
+
+.gatilho {
+    margin-top: 25px;
+    padding: 20px 22px;
+    border-left: 4px solid var(--rosa);
+    border-radius: 12px;
+    background: rgba(255,255,255,.05);
+    color: #d7e3ef;
+    line-height: 1.7;
+}
+
+.alternativas {
+    display: grid;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.alternativa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 22px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 18px;
+    background: rgba(255,255,255,.04);
+    color: white;
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 16px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.alternativa span {
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+    font-weight: 700;
+}
+
+.alternativa:hover {
+    transform: translateX(5px);
+    border-color: var(--azul);
+    background: rgba(77,168,255,.1);
+}
+
+.alternativa.selecionada {
+    border-color: var(--azul);
+    background: linear-gradient(90deg, rgba(77,168,255,.2), rgba(123,77,255,.14));
+    box-shadow: 0 0 25px rgba(77,168,255,.12);
+}
+
+.alternativa.selecionada span {
+    background: var(--azul);
+    color: #07131d;
+}
+
+.quizNavegacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.quizBotao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 55px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.quizBotao.principal {
+    border: none;
+    color: white;
+    background: linear-gradient(135deg, var(--azul), var(--roxo));
+}
+
+.quizBotao.secundario {
+    border: 1px solid rgba(255,255,255,.15);
+    color: white;
+    background: rgba(255,255,255,.05);
+}
+
+.quizBotao:hover {
+    transform: translateY(-4px);
+}
+
+.quizBotao:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.resultadoQuiz {
+    max-width: 850px;
+    margin: 80px auto 130px;
+    padding: 60px 8%;
+    text-align: center;
+    border-radius: 35px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(20px);
+}
+
+.resultadoQuiz > p {
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.resultadoQuiz h2 {
+    font-family: 'Anton';
+    font-size: 100px;
+    line-height: 1;
+    margin: 15px 0;
+    background: linear-gradient(90deg, var(--azul), var(--rosa));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.resultadoQuiz h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.resultadoDetalhes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.resultadoQuiz .quizBotao {
+    margin: 5px;
+}
+
+.menuAtivo {
+    color: var(--azul) !important;
+}
+
+@media (max-width: 800px) {
+    .quizMain {
+        padding-top: 90px;
+    }
+
+    .quizHero {
+        padding: 70px 6% 30px;
+    }
+
+    .quizArea {
+        padding: 0 6%;
+    }
+
+    .questaoCard {
+        padding: 28px 22px;
+    }
+
+    .quizHero .tituloSecao h2,
+    .resultadoQuiz h2 {
+        font-size: 65px;
+    }
+
+    .quizTop {
+        font-size: 13px;
+    }
+
+    .quizNavegacao {
+        flex-direction: column-reverse;
+    }
+
+    .quizBotao {
+        width: 100%;
+    }
+
+    .resultadoDetalhes {
+        flex-direction: column;
+    }
+
+    .resultadoDetalhes div {
+        width: 100%;
+    }
+}

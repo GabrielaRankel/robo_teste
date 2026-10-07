@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz • Robo4.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="quizBody">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+
+    <header class="cabecalho">
+        <h1 class="logo">Robo<span>4.0</span></h1>
+        <button id="botaoMenu">☰</button>
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="index.html#conceitos">Conceitos</a>
+            <a href="index.html#catalogo">Robôs</a>
+            <a href="index.html#sensores">Sensores</a>
+            <a href="index.html#arduino">Arduino</a>
+            <a href="index.html#comparativo">Comparativo</a>
+            <a href="quiz.html" class="menuAtivo">Quiz</a>
+        </nav>
+    </header>
+
+    <main class="quizMain">
+        <section class="quizHero">
+            <div class="tituloSecao">
+                <p>AVALIAÇÃO • IoT • ROBÓTICA</p>
+                <h2>QUIZ<br><span>ROBO4.0</span></h2>
+            </div>
+            <p class="quizIntro">
+                Teste seus conhecimentos sobre robôs, sensores, multímetro, Arduino, ESP e programação.
+                Leia o contexto de cada questão e escolha uma alternativa.
+            </p>
+            <div class="quizInfo">
+                <div><strong>10</strong><span>questões</span></div>
+                <div><strong>4</strong><span>alternativas</span></div>
+                <div><strong>1</strong><span>resposta correta</span></div>
+            </div>
+        </section>
+
+        <section class="quizArea">
+            <div class="quizTop">
+                <span id="numeroQuestao">Questão 1 de 10</span>
+                <span id="contador">0 / 10 respondidas</span>
+            </div>
+
+            <div class="barraQuiz">
+                <div id="progressoQuiz"></div>
+            </div>
+
+            <div id="quizContainer"></div>
+
+            <div class="quizNavegacao">
+                <button id="anterior" class="quizBotao secundario" type="button">← Anterior</button>
+                <button id="proxima" class="quizBotao principal" type="button">Próxima →</button>
+            </div>
+        </section>
+
+        <section id="resultado" class="resultadoQuiz" style="display:none;">
+            <p>RESULTADO FINAL</p>
+            <h2 id="notaFinal">0 / 10</h2>
+            <h3 id="mensagemFinal"></h3>
+            <div class="resultadoDetalhes">
+                <div><strong id="acertosFinal">0</strong><span>acertos</span></div>
+                <div><strong id="errosFinal">0</strong><span>erros</span></div>
+                <div><strong id="percentualFinal">0%</strong><span>aproveitamento</span></div>
+            </div>
+            <button id="refazer" class="quizBotao principal" type="button">Refazer quiz</button>
+            <a href="index.html" class="quizBotao secundario">Voltar ao site</a>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Robótica, Sensoriamento e IoT 4.0</h2>
+        <p>Quiz educativo desenvolvido para avaliar conhecimentos sobre robótica, sensores, Arduino, ESP e programação.</p>
+        <small>© 2026 • Robo4.0</small>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const questoes = [
+            {
+                tema: "ROBÔ",
+                texto: "Em uma linha de produção, uma equipe precisa utilizar um robô com movimentos rotativos em vários eixos para executar uma operação que exige flexibilidade e alcance. O catálogo do Robo4.0 apresenta diferentes tipos de robôs industriais, cada um com características próprias.",
+                gatilho: "Considerando as características apresentadas no site, qual robô é mais associado à flexibilidade e possui seis eixos?",
+                alternativas: ["Cartesiano", "SCARA", "Articulado", "Delta"],
+                correta: 2
+            },
+            {
+                tema: "SENSOR",
+                texto: "Durante a automação de um ambiente, é necessário medir a distância entre um objeto e o sensor para detectar obstáculos. O sistema deve transformar essa leitura em um dado que possa ser processado por um microcontrolador.",
+                gatilho: "Qual sensor do catálogo é indicado para realizar essa medição de distância?",
+                alternativas: ["DHT11", "HC-SR04", "LDR", "MQ-2"],
+                correta: 1
+            },
+            {
+                tema: "SENSOR",
+                texto: "Em um projeto de automação, é necessário detectar a presença de uma pessoa para acionar uma iluminação automaticamente. O sensor deve identificar movimento sem que seja necessário contato físico com a pessoa.",
+                gatilho: "Qual componente apresentado no site é mais adequado para essa aplicação?",
+                alternativas: ["PIR HC-SR501", "LM35", "ACS712", "HX711"],
+                correta: 0
+            },
+            {
+                tema: "MULTÍMETRO",
+                texto: "Durante a manutenção de um circuito eletrônico, um técnico precisa verificar se existe tensão entre dois pontos do circuito. Para realizar a medição corretamente, ele seleciona a função adequada no equipamento e conecta as pontas de prova em paralelo ao trecho que deseja analisar.",
+                gatilho: "Qual grandeza elétrica está sendo medida nessa situação?",
+                alternativas: ["Resistência", "Corrente", "Tensão", "Potência"],
+                correta: 2
+            },
+            {
+                tema: "ARDUINO UNO",
+                texto: "Um estudante está desenvolvendo um sistema de automação com Arduino UNO. Um sensor conectado a uma entrada fornece uma leitura que será analisada pelo programa para controlar uma saída.",
+                gatilho: "Qual é a função principal do código nesse processo?",
+                alternativas: [
+                    "Apenas alimentar eletricamente o sensor.",
+                    "Interpretar os dados recebidos e controlar as saídas conforme a lógica programada.",
+                    "Substituir todos os componentes eletrônicos do circuito.",
+                    "Transformar qualquer sensor em um sensor digital automaticamente."
+                ],
+                correta: 1
+            },
+            {
+                tema: "ARDUINO UNO",
+                texto: "Um projeto utiliza um Arduino para ler um sensor conectado a uma entrada analógica. A leitura retorna um valor numérico que representa o sinal recebido pelo microcontrolador.",
+                gatilho: "Qual função normalmente é utilizada no Arduino para realizar uma leitura de uma entrada analógica?",
+                alternativas: ["digitalWrite()", "digitalRead()", "analogRead()", "pinMode()"],
+                correta: 2
+            },
+            {
+                tema: "ESP",
+                texto: "Em um projeto de IoT, as leituras dos sensores precisam ser processadas por uma placa capaz de participar de sistemas conectados e enviar dados para aplicações ou serviços IoT. O site destaca a integração de placas como o ESP32 com sistemas de comunicação.",
+                gatilho: "Qual placa é citada no projeto como opção para integração com IoT?",
+                alternativas: ["ESP32", "Arduino Mega somente", "Fonte de alimentação", "Multímetro"],
+                correta: 0
+            },
+            {
+                tema: "CÓDIGO",
+                texto: "Observe o trecho de código utilizado para controlar uma saída a partir da leitura de um sensor: if (luz < 400) digitalWrite(13, HIGH); else digitalWrite(13, LOW);",
+                gatilho: "Quando a leitura de luz for menor que 400, o que acontecerá com o pino 13?",
+                alternativas: [
+                    "Será configurado como entrada.",
+                    "Será colocado em nível HIGH.",
+                    "Será colocado em nível LOW.",
+                    "O Arduino será desligado."
+                ],
+                correta: 1
+            },
+            {
+                tema: "CÓDIGO",
+                texto: "Considere o trecho: int leitura = analogRead(sensor); float tensao = leitura * 5.0 / 1023.0; O programa realiza uma leitura de uma entrada analógica e depois utiliza esse valor em um cálculo.",
+                gatilho: "Qual é a finalidade da variável 'tensao' nesse código?",
+                alternativas: [
+                    "Armazenar o valor calculado de tensão correspondente à leitura.",
+                    "Definir o número do pino digital.",
+                    "Ligar diretamente um motor.",
+                    "Armazenar o nome do sensor."
+                ],
+                correta: 0
+            },
+            {
+                tema: "CÓDIGO",
+                texto: "Em um programa Arduino, a função setup() é executada no início da operação e a função loop() é usada para executar repetidamente as instruções do sistema. Um projeto precisa iniciar a comunicação serial e depois realizar leituras continuamente.",
+                gatilho: "Em qual função deve ficar a rotina que precisa ser repetida continuamente?",
+                alternativas: ["setup()", "loop()", "include()", "define()"],
+                correta: 1
+            }
+        ];
+
+        let questaoAtual = 0;
+        let respostas = Array(questoes.length).fill(null);
+
+        const container = document.getElementById("quizContainer");
+        const numeroQuestao = document.getElementById("numeroQuestao");
+        const contador = document.getElementById("contador");
+        const progresso = document.getElementById("progressoQuiz");
+        const anterior = document.getElementById("anterior");
+        const proxima = document.getElementById("proxima");
+        const resultado = document.getElementById("resultado");
+
+        function renderizarQuestao() {
+            const q = questoes[questaoAtual];
+
+            numeroQuestao.textContent = `Questão ${questaoAtual + 1} de ${questoes.length}`;
+            contador.textContent = `${respostas.filter(r => r !== null).length} / ${questoes.length} respondidas`;
+            progresso.style.width = `${((questaoAtual + 1) / questoes.length) * 100}%`;
+
+            container.innerHTML = `
+                <article class="questaoCard">
+                    <span class="tagQuestao">${q.tema}</span>
+                    <h3>${q.texto}</h3>
+                    <div class="gatilho"><strong>Gatilho:</strong> ${q.gatilho}</div>
+                    <div class="alternativas">
+                        ${q.alternativas.map((alternativa, index) => `
+                            <button type="button"
+                                class="alternativa ${respostas[questaoAtual] === index ? "selecionada" : ""}"
+                                data-index="${index}">
+                                <span>${String.fromCharCode(65 + index)}</span>
+                                ${alternativa}
+                            </button>
+                        `).join("")}
+                    </div>
+                </article>
+            `;
+
+            document.querySelectorAll(".alternativa").forEach(botao => {
+                botao.addEventListener("click", () => {
+                    respostas[questaoAtual] = Number(botao.dataset.index);
+                    document.querySelectorAll(".alternativa").forEach(b => b.classList.remove("selecionada"));
+                    botao.classList.add("selecionada");
+                    atualizarBotoes();
+                    contador.textContent = `${respostas.filter(r => r !== null).length} / ${questoes.length} respondidas`;
+                });
+            });
+
+            anterior.disabled = questaoAtual === 0;
+            atualizarBotoes();
+        }
+
+        function atualizarBotoes() {
+            if (questaoAtual === questoes.length - 1) {
+                proxima.textContent = "Finalizar quiz ✓";
+            } else {
+                proxima.textContent = "Próxima →";
+            }
+        }
+
+        anterior.addEventListener("click", () => {
+            if (questaoAtual > 0) {
+                questaoAtual--;
+                renderizarQuestao();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        });
+
+        proxima.addEventListener("click", () => {
+            if (respostas[questaoAtual] === null) {
+                alert("Selecione uma alternativa antes de continuar.");
+                return;
+            }
+
+            if (questaoAtual < questoes.length - 1) {
+                questaoAtual++;
+                renderizarQuestao();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+                finalizarQuiz();
+            }
+        });
+
+        function finalizarQuiz() {
+            let acertos = 0;
+
+            questoes.forEach((q, i) => {
+                if (respostas[i] === q.correta) acertos++;
+            });
+
+            const erros = questoes.length - acertos;
+            const percentual = Math.round((acertos / questoes.length) * 100);
+
+            document.querySelector(".quizArea").style.display = "none";
+            document.querySelector(".quizHero").style.display = "none";
+            resultado.style.display = "block";
+
+            document.getElementById("notaFinal").textContent = `${acertos} / ${questoes.length}`;
+            document.getElementById("acertosFinal").textContent = acertos;
+            document.getElementById("errosFinal").textContent = erros;
+            document.getElementById("percentualFinal").textContent = `${percentual}%`;
+
+            let mensagem = "Continue estudando!";
+            if (percentual >= 90) mensagem = "Excelente desempenho!";
+            else if (percentual >= 70) mensagem = "Muito bom! Você está no caminho certo.";
+            else if (percentual >= 50) mensagem = "Bom trabalho, mas ainda há pontos para revisar.";
+
+            document.getElementById("mensagemFinal").textContent = mensagem;
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        document.getElementById("refazer").addEventListener("click", () => {
+            questaoAtual = 0;
+            respostas = Array(questoes.length).fill(null);
+            resultado.style.display = "none";
+            document.querySelector(".quizArea").style.display = "block";
+            document.querySelector(".quizHero").style.display = "block";
+            renderizarQuestao();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        renderizarQuestao();
+    </script>
+</body>
+</html>
